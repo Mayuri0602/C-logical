@@ -1,0 +1,236 @@
+1.  #include<stdio.h>
+    int main(){
+      int a=45;
+      int b=67;
+      int c=a+b;
+    printf("%d",c);
+    return 0;
+
+}                            
+
+2.
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b");
+    scanf("%d",&b);
+    int result =a-b;
+    printf("%d",result);
+    return 0;
+}
+
+
+3.
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b");
+    scanf("%d",&b);
+    int result =a*b;
+    printf("%d",result);
+    return 0;
+}
+
+
+4.
+
+#include<stdio.h>
+int main(){
+    int a=22;
+    int b=2;
+    int c=a/b;
+    printf("%d",c);
+    return 0;
+}
+
+
+5.
+  
+   #include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b");
+    scanf("%d",&b);
+    int c;
+    printf("enter the value of c");
+    scanf("%d",&c);
+    int d;
+    printf("enter the value of d");
+    scanf("%d",&d);
+    int e;
+    printf("enter the value of e");
+    scanf("%d",&e);
+    int result=a+b+c+d+e;
+    printf("%d",result);
+    return 0;
+}
+
+6.
+
+  #include<stdio.h>
+int main(){
+    int a=23;
+    int b=89;
+    int c=12;
+    int d=56;
+    int e=a+b+c+d;
+    printf("%d",e);
+    return 0;
+}
+
+7. 
+   #include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b");
+    scanf("%d",&b);
+    int c;
+    printf("enter the value of c");
+    scanf("%d",&c);
+    int d;
+    printf("enter the value of d");
+    scanf("%d",&d);
+    int e;
+    printf("enter the value of e");
+    scanf("%d",&e);
+    int result= a*b+c/d-e;
+    printf("%d",result);
+    return 0;
+}
+
+8.
+
+    #include<stdio.h>
+int main(){
+    float a;
+    printf("enter the decimal value of a");
+    scanf("%f",&a);
+    int b;
+    printf("enter the value of b");
+    scanf("%d",&b);
+    int c;
+    printf("enter the value of c");
+    scanf("%d",&c);
+    int d;
+    printf("enter the value of d");
+    scanf("%d",&d);
+    float e;
+    printf("enter the decimal value of e");
+    scanf("%f",&e);
+    float f;
+    printf("enter the decimal value of f");
+    scanf("%f",&f);
+    float result= a*(b-c)/d+e-f;
+    printf("%f",result);
+    return 0;
+}
+
+9. 
+   #include<stdio.h>
+int main(){
+    float a;
+    printf("enter the decimal value of a");
+    scanf("%f",&a);
+    float b;
+    printf("enter the decimal value of b");
+    scanf("%f",&b);
+    int c;
+    printf("enter the value of c");
+    scanf("%d",&c);
+    int d;
+    printf("enter the value of d");
+    scanf("%d",&d);
+    float e;
+    printf("enter the decimal value of e");
+    scanf("%f",&e);
+    float f;
+    printf("enter the decimal value of f");
+    scanf("%f",&f);
+    float result= a*b-(c/d)-e+f;
+    printf("%f",result);
+    return 0;
+}
+
+10. 
+     #include<stdio.h>
+int main(){
+    float a;
+    printf("enter the decimal value of a");
+    scanf("%f",&a);
+    float b;
+    printf("enter the decimal value of b");
+    scanf("%f",&b);
+    float c;
+    printf("enter the decimal value of c");
+    scanf("%f",&c);
+    float d;
+    printf("enter the decimal value of d");
+    scanf("%f",&d);
+    int e;
+    printf("enter the value of e");
+    scanf("%d",&e);
+    float f;
+    printf("enter the decimal value of f");
+    scanf("%f",&f);
+    float result= a+b*(c-d)/e+f;
+    printf("%f",result);
+    return 0;
+}
+
+11. 
+    #include<stdio.h>
+int main(){
+    float a=8.9;
+    float b=1.67;
+    float c=6.21;
+    float d=5.6;
+    float e=7.8;
+    int f=34;
+    int g=157;
+    float result=a*b-(c-d)+e-f+g;
+    printf("%f",result);
+    return 0;
+}
+
+12.
+     #include<stdio.h>
+int main(){
+    int a=8;
+    int b=1;
+    int c=4;
+    int d=2;
+    int e=1;
+    int f=6;
+    int result=a*b+(c-d)/e+f;
+    printf("%d",result);
+    return 0;
+}
+
+13.
+      #include<stdio.h>
+int main(){
+    float a=1.2;
+    float b=6.7;
+    float c=4.5;
+    int d=2;
+    float result=a*b-c/d;
+    printf("%f",result);
+    return 0;
+} 
+    
+
+       
