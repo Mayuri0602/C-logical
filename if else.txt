@@ -1,104 +1,323 @@
 1.
-
 #include<stdio.h>
 int main(){
-    //input number
-    int a;
-    printf("enter the value of a");
-    scanf("%d",&a);
-    if(a>50){
-        printf("a is greater than 50");
+    char ch;
+    printf("enter the characters");
+    scanf("%c",&ch);
+    if(ch=='a'){
+        printf("vowel");
+    }
+   else  if(ch=='e'){
+        printf("vowel");
+    }
+   else if(ch=='i'){
+        printf("vowel");
+    }
+   else if(ch=='o'){
+        printf("vowel");
+    }
+   else if(ch=='u'){
+        printf("vowel");
+    }
+    else{
+        printf("consonant");
     }
     return 0;
-}
+    }
 
 2.
 
 #include<stdio.h>
 int main(){
-    //input number
-    int a;
-    printf("enter the value of a");
-    scanf("%d",&a);
-    if(a>10){
-        printf("a is greater than 10");
+    char a;
+    printf("enter the characters");
+    scanf("%c",&a);
+    if(a=='a'){
+        //two number input
+        int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d", &num1,&num2);
+        int result=num1+num2;
+        printf("%d",result);
     }
-    else{
-        printf("a is not greater than 10");
+    else if(a=='s'){
+        int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d", &num1,&num2);
+        int result=num1-num2;
+        printf("%d",result);
+    }
+    else if(a=='m'){
+        int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d", &num1, &num2);
+        int result=num1*num2;
+        printf("%d",result);
+    }
+    else if(a=='d'){
+        int num1,num2;
+        printf("enter the value of num1 and num2");
+        scanf("%d %d",&num1,&num2);
+        int result=num1/num2;
+        printf("%d",result);
     }
     return 0;
 }
 
 3.
 
-  #include<stdio.h>
-  int main(){
-    //input number
-    int a;
-    printf("enter the value of a");
-    scanf("%d",&a);
-    if (a>747){
-        printf("a is greater than 747");
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter the characters");
+    scanf("%c",&ch);
+    if((ch=='a'||ch=='s'||ch=='d'||ch=='f'||ch=='g'||ch=='h'||ch=='j'||ch=='k'||ch=='l')){
+    printf("middle line");
+    }
+    else if((ch=='z'||ch=='x'||ch=='c'||ch=='v'||ch=='b'||ch=='n'||ch=='m')){
+        printf("lower line");
     }
     else{
-        printf("a is less than 747");
+        printf("upper line");
     }
     return 0;
-}
+    }
 
 
 4.
 
-   #include<stdio.h>
-   int main(){
-    //input age
-    int a;
-    printf("enter the value of a");
-    scanf("%d",&a);
-    if (a>18){
-        printf("you are eligible for vote");
+
+#include<stdio.h>
+int main(){
+    //input numbers
+    int num;
+    printf("enter the numbers");
+    scanf("%d",&num);
+    if(num>=1&&num<=10){
+        printf("between 1 to 10");
+    }
+    else if(num>=11&&num<=20){
+        printf("between 11 to 20");
+    }
+    else if(num>=21&&num<=50){
+        printf("between 21 to 50");
     }
     else{
-        printf("you are not eligible for vote");
+        printf("input is not valid");
     }
     return 0;
 }
 
 
-5. 
+5.
 
-   #include<stdio.h>
+#include<stdio.h>
+int main(){                                                                            
+    float cel,fah;
+    printf("enter the value in cel");
+    scanf("%f",&cel);
+    //convert temperature in fah
+    fah=cel*1.8+32;
+    printf("enter the value in fah:%f\n",fah);
+    //convert temperature in cel
+    printf("enter the value in fah");
+    scanf("%f",&fah);
+    cel=(fah-32)/1.8;
+    printf("enter the temperature in cel:%f\n",cel);
+    return 0;
+}
+
+11.
+
+#include<stdio.h>
+int main(){
+    float bmi;
+    printf("enter the bmi");
+    scanf("%f",&bmi);
+    if (bmi<18.5){
+        printf("underweight");
+    }
+    else if (bmi>=18.5&&bmi<24.9){
+        printf("normal weight");
+    }
+    else if (bmi>=25&&bmi<29.9){
+        printf("overweight");
+    }
+    else if (bmi>=30){
+        printf("obesity");
+    }
+    return 0;
+}
+
+---------two no. max.--------
+
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("enter the value of a and b");
+    scanf("%d %d", &a, &b);
+    if (a>b){
+        printf("a is maximum");
+    }
+    else if(b>a){
+        printf("b is maximum");
+    }
+    return 0;
+}    
+
+
+-------three no. max.------
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("enter the value of a and b and c");
+    scanf("%d %d %d", &a, &b, &c);
+    if (a>b && a>c){
+        printf("a is maximum");
+    }
+    else if(b>a && b>c){
+        printf("b is maximum");
+    }
+    else if(c>a&&c>b){
+        printf("c is mamimum");
+    }
+    return 0;
+}    
+
+-------five no. max.-------
+
+#include<stdio.h>
+int main(){
+    int a,b,c,d,e;
+    printf("enter the value of a and b and c and d and e");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d,&e);
+    if (a>b && a>c &&a>d && a>e){
+        printf("a is maximum");
+    }
+    else if(b>a && b>c && b>d && b>e){
+        printf("b is maximum");
+    }
+    else if(c>a&&c>b&&c>d&&c>e){
+        printf("c is maximum");
+    }
+    else if(d>a&&d>b&&d>c&&d>e){
+        printf("d is maximum");
+    }
+    else{
+        printf("e is maximum");
+    }
+    return 0;
+}    
+
+12.
+
+#include<stdio.h>
+int main(){
+    int hour;
+    //enter time between 1 to 24
+    printf("enter the hour");
+    scanf("%d",&hour);
+    if(hour<12&&hour>=4){
+        printf("good morning");
+    }
+    else if(hour>=12&&hour<16){
+        printf("good afternoon");
+    }
+    else if(hour>=16&&hour<20){
+        printf("good evening");
+    }
+    else {
+        printf("good night");
+    }
+    return 0;
+}
+
+14.
+
+#include<stdio.h>
 int main(){
     int num;
-    printf("enter the number");
+    printf("enter the numbers");
     scanf("%d",&num);
-    if (num%2==0){
-        printf("even num");
+    if(num>0){
+        printf("num is positive");
     }
+    else if(num<0){
+        printf("num is negative");
+    }
+    else {
+        printf("num is zero");
+    }
+    return 0;
+}    
+
+15.
+
+#include<stdio.h>
+int main(){
+    char ch;
+    printf("enter the characters");
+    scanf("%c",&ch);
+    //check if the character is an alphabet
+    if((ch>='A'&&ch<='Z'||ch>='a'&&ch<='z')){
+        printf("%c is an alphabet:\n",ch);
+    }
+    else {
+        printf("%c is not an alphabet:\n",ch);
+    }
+    return 0;
+}
+
+
+----nested if else----
+
+even no.
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter the character");
+    scanf("%c",&a);
+    if(a=='e'){
+        //enter number
+        int num;
+        printf("enter the number");
+        scanf("%d",&num);
+        if(num%2==0){
+            printf("even");
+        }
         else{
-        printf("odd num");
+            printf("number is odd");
+        }
+    }
+    else{
+    printf("input is not matched");
     }
     return 0;
 }
+-------------------------------------
+voter id
 
-6. 
-
-   #include<stdio.h>
+#include<stdio.h>
 int main(){
-    int num;
-    printf("enter the num");
-    scanf("%d",&num);
-    if(num%5==0){
-        printf("num is divisible by 5");
+    char a;
+    printf("enter the character");
+    scanf("%c",&a);
+    if(a=='v'){
+        //enter number
+        int age;
+        printf("enter the age");
+        scanf("%d",&age);
+        if(age>=18){
+            printf("eligible for voter id");
+        }
+        else{
+            printf("not eligible");
+        }
     }
     else{
-        printf("num is not divisible by 5");
+    printf("input is not matched");
     }
     return 0;
-    }
-
-  
-
-
-
-   
+}
