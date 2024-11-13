@@ -1,0 +1,204 @@
+Q.1. Write a C program to print "I love my country"
+
+
+#include<stdio.h>
+int main(){
+    printf("I love my country");
+    return 0;
+}
+
+
+Q.2. Write a C program to find the Sum of two numbers  entered by the user.
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value of a");
+    scanf("%d",&a);
+    int b;
+    printf("enter the value of b");
+    scanf("%d",&b);
+    int c=a+b;
+    printf("%d",c);
+    return 0;
+}
+
+output:
+
+enter the value of a7
+enter the value of b8
+15
+
+
+Q.3. What are the features of C programming language ?
+
+Ans. Structural language,  procedural language, fast & efficient,  modularity,  portability,
+        rich set of built-in operators, libraries with rich functions etc.
+
+
+Q.4. Write a C program to enter two numbers and to perform all arithmetic operations.
+
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("enter the first number");
+    scanf("%d", &a);
+    printf("enter the second number");
+    scanf("%d", &b);
+    c=a+b,
+    printf("addition of two numbers is:%d\n",c);
+    c=a-b;
+    printf("subtraction of two numbers is:%d\n",c);
+    c=a*b;
+    printf("multiplication of two numbers is:%d\n",c);
+    c=a/b;
+    printf("division of two numbers is:%d\n",c);
+    return 0;
+}
+
+output:
+
+enter the first number50
+enter the second number5
+addition of two numbers is:55
+subtraction of two numbers is:45
+multiplication of two numbers is:250
+division of two numbers is:10
+
+
+Q.5. Write a C program to enter the length and breadth of rectangle and find its perimeter.
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("enter the length");
+    scanf("%d", &a);
+    printf("enter the breadth");
+    scanf("%d", &b);
+    c=2*(a+b),
+    printf("perimeter of a rectangle is:%d\n",c);
+    return 0;
+}
+
+output:
+
+enter the length34
+enter the breadth12
+perimeter of a rectangle is:92
+
+
+Q.6. Write a C program to enter radius of a circle and find its diameter, circumference and area.
+
+
+#include<stdio.h>
+int main(){
+    float radius,diameter,area,circumference;
+    printf("enter the radius=");
+    scanf("%f",&radius);
+    diameter=2*radius;
+    printf("diameter of a circle is: %f\n",diameter);
+    circumference=2*3.14*radius;
+    printf("circumference of a circle: %f\n",circumference);
+    area=3.14*radius*radius;
+    printf("area of a circle: %f\n",area);
+    
+    return 0;
+}
+
+
+output:
+
+enter the radius=9
+diameter of a circle is: 18.000000
+circumference of a circle: 56.520000
+area of a circle: 254.339996
+
+
+Q.7. Write a C program to enter the length and breadth of rectangle and find its area.
+
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("enter the length");
+    scanf("%d", &a);
+    printf("enter the breadth");
+    scanf("%d", &b);
+    c=a*b,
+    printf("area of a rectangle is:%d\n",c);
+    return 0;
+}
+
+output:
+
+enter the length=23
+enter the breadth=4
+area of a rectangle is:92
+
+Q.8. Write a C program to enter length in centimetre and convert it into kilometre & metre.
+
+
+#include<stdio.h>
+int main(){
+    int cm;
+    printf("enter the length in centimetre=");
+    scanf("%d", &cm);
+    float m,km;
+    m=cm/100;
+    printf("length in metre:%f\n",m);
+    km=cm/100000;
+    printf("length in kilometre:%f\n",km);
+    return 0;
+}
+
+
+output:
+
+enter the length in centimetre=400000
+length in metre:4000.000000
+length in kilometre:4.000000
+
+
+Q.9. Write a C program to find power of any  number x^y.
+
+
+#include<stdio.h>
+int main(){
+    int x,y;
+    printf("enter the value of x=");
+    scanf("%d", &x);
+    y=x*x;
+    printf("power of number x:%d\n",y);
+    
+    return 0;
+}
+
+
+output:
+
+enter the value of x=4
+power of number x:16
+
+Q.10. Write a C program to enter two angles of a triangle and find the third angle.
+
+#include<stdio.h>
+int main(){
+    int x,y,z;
+    printf("enter the two angles of a triangle");
+    scanf("%d %d", &x,&y);
+    z=180-(x+y);
+    printf("third angle of a triangle:%d\n",z);
+    
+    return 0;
+}
+
+output:
+
+enter the two angles of a triangle46 54
+third angle of a triangle:80
+
+
+
+
