@@ -1,0 +1,178 @@
+Q.1.  Write a C program to enter marks of five subjects and calculate total, average and percentage.
+
+
+#include<stdio.h>
+int main(){
+    int marks;
+    float avg,per;
+    int total=0;
+    for(int i=1;i<=5;i++){
+        printf("enter marks for subject:");
+        scanf("%d",&marks);
+        total=total+marks;
+    }
+    avg=total/5;
+    per=(total/500.0)*100;
+    printf("Total marks: %d\n",total);
+    printf("Average marks: %f\n",avg);
+    printf("Percentage: %f\n",per);
+    
+    return 0;
+}
+
+output:
+
+enter marks for subject:89
+enter marks for subject:98
+enter marks for subject:78
+enter marks for subject:99
+enter marks for subject:93
+Total marks: 457
+Average marks: 91.000000
+Percentage: 91.400002
+---------------------------------------------------------------------------------------------------------------------------------
+
+Q.2. Write a C program to count number of digits in a number.
+
+#include<stdio.h>
+int main(){
+    int num,count=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    while(num>0){
+        count++;
+        num=num/10;
+    }
+     printf("%d",count);   
+    return 0;
+}
+
+output:
+
+enter the number:67321
+5
+------------------------------------------------------------------------------------------------------------------------------------
+
+Q.3. Write a C program to find sum of all even numbers between 1 to n.
+
+
+#include<stdio.h>
+int main(){
+    int num,sum=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++){
+        if(i%2==0){
+            sum=sum+i;
+        }
+    }
+     printf("%d",sum);   
+    return 0;
+}
+
+output:
+
+enter the number:24
+156
+------------------------------------------------------------------------------------------------------------------------------
+
+Q.4. Write a C program to find first and last digit  and sum of first & last digit of a number.
+
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n,first,last,count,sum;
+    printf("enter any number:");
+    scanf("%d",&n);
+    count=log10(n);
+    first=n/pow(10,count);
+    last=n%10;
+    sum=first+last;
+    printf("first digit of a number is:%d\n",first);
+    printf("last digit of a number is:%d\n",last);
+    printf("sum of first and last digit of a number:%d",sum);
+    return 0;
+}
+
+output:
+
+enter any number:2367
+first digit of a number is:2
+last digit of a number is:7
+sum of first and last digit of a number:9
+----------------------------------------------------------------------------------------------------------------------------------------------
+Q.5. Write a C program to find sum of digits of a number.
+
+
+#include<stdio.h>
+int main(){
+    int n,sum=0;
+    printf("enter any number");
+    scanf("%d",&n);
+    while(n>0){
+        sum=sum+n%10;
+        n=n/10;
+    }
+    printf("sum of digits of a number=%d",sum);
+    return 0;
+}
+
+output:
+
+enter any number453
+sum of digits of a number=12
+----------------------------------------------------------------------------------------------------------------------------------------------
+Q.6. Write a C program to calculate product of digits of a number.
+
+#include<stdio.h>
+int main(){
+    int n,rem,product=1;
+    printf("enter any number=");
+    scanf("%d",&n);
+    while(n>0){
+        rem=n%10;
+        product=product*rem;
+        n=n/10;
+    }
+    printf("product of digits of a number=%d",product);
+    return 0;
+}
+
+
+output:
+
+enter any number=243
+product of digits of a number=24
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Q.7. Write a C program to check whether a number is prime or not.
+
+
+#include<stdio.h>
+int main(){
+    int n,i,count=0;
+    printf("Enter any number=");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        if(n%i==0){
+            count++;
+        }
+    }
+      if(count==2){
+      printf("Number is prime");
+      }
+      else {
+        printf("Number is not prime");
+    }
+    return 0;
+}
+
+output:
+
+
+Enter any number=13
+Number is prime
+
+Enter any number=18
+Number is not prime
+--------------------------------------------------------------------------------------------------------------------------------------------------------
