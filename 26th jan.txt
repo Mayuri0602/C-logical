@@ -1,0 +1,89 @@
+1st program :-
+
+#include <stdio.h>
+
+int main()
+{
+    int x=6;
+    int y=23.45;
+    int z='m';
+    
+    printf("%d\n%d\n%d\n",x,y,z);
+
+    return 0;
+}
+
+output :-
+6 
+23
+109
+
+
+2nd program :-
+
+#include <stdio.h>
+
+int main()
+{
+    int x=6;
+    float y=23.45;
+    char z='m';
+    
+    printf("%d\n%f\n%c\n",x,y,z);
+
+    return 0;
+}
+
+output:-
+6
+23.45
+m
+
+
+3rd program :- Addition of two numbers by user input
+
+#include <stdio.h>
+int main()
+{
+    int x,y,z;
+    printf("Enter two numbers:");
+    scanf("%d%d",&x,&y);
+    z=x+y;
+    printf("Addition is %d",z);
+    return 0;
+}
+
+output:-
+Enter two numbers:45
+34
+Addition is 79
+
+
+4th program :-  Area of a circle
+
+#include <stdio.h>
+int main()
+{
+    float r,a,pi=3.14;
+    printf("Enter the radius:");
+    scanf("%f",&r);
+    a=pi*r*r;
+    printf("Area of a circle is %.2f",a);
+    return 0;
+}
+
+
+5th program:- Area of a rectangle
+
+#include <stdio.h>
+int main()
+{
+    int l,b,a;
+    printf("Enter the length and breadth: ");
+    scanf("%d%d",&l,&b);
+    printf("Area of a rectangle is %d",a=l*b);
+    return 0;
+}
+
+
+
